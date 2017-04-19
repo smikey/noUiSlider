@@ -386,7 +386,7 @@
 
 		var step = this.xNumSteps[0];
 
-		if ( step && ((value / step) % 1) !== 0 ) {
+		if ( step && ((value / step).toPrecision(3) % 1) !== 0 ) {
 			throw new Error("noUiSlider (" + VERSION + "): 'limit', 'margin' and 'padding' must be divisible by step.");
 		}
 
