@@ -631,9 +631,9 @@
 			throw new Error("noUiSlider (" + VERSION + "): 'padding' option must be a positive number.");
 		}
 
-		if ( parsed.padding >= 50 ) {
-			throw new Error("noUiSlider (" + VERSION + "): 'padding' option must be less than half the range.");
-		}
+		// if ( parsed.padding >= 50 ) {
+		// 	throw new Error("noUiSlider (" + VERSION + "): 'padding' option must be less than half the range.");
+		// }
 	}
 
 	function testDirection ( parsed, entry ) {
@@ -1755,9 +1755,9 @@ function closure ( target, options, originalOptions ){
 				to = Math.max(to, options.padding);
 			}
 
-			if ( handleNumber === scope_Handles.length - 1 ) {
-				to = Math.min(to, 100 - options.padding);
-			}
+			// if ( handleNumber === scope_Handles.length - 1 ) {
+			// 	to = Math.min(to, 100 - options.padding);
+			// }
 		}
 
 		to = scope_Spectrum.getStep(to);

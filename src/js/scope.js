@@ -37,9 +37,9 @@
 				to = Math.max(to, options.padding);
 			}
 
-			if ( handleNumber === scope_Handles.length - 1 ) {
-				to = Math.min(to, 100 - options.padding);
-			}
+			// if ( handleNumber === scope_Handles.length - 1 ) {
+			// 	to = Math.min(to, 100 - options.padding);
+			// }
 		}
 
 		to = scope_Spectrum.getStep(to);

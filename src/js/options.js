@@ -196,9 +196,9 @@
 			throw new Error("noUiSlider (" + VERSION + "): 'padding' option must be a positive number.");
 		}
 
-		if ( parsed.padding >= 50 ) {
-			throw new Error("noUiSlider (" + VERSION + "): 'padding' option must be less than half the range.");
-		}
+		// if ( parsed.padding >= 50 ) {
+		// 	throw new Error("noUiSlider (" + VERSION + "): 'padding' option must be less than half the range.");
+		// }
 	}
 
 	function testDirection ( parsed, entry ) {
